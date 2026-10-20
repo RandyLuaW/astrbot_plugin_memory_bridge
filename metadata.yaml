@@ -1,0 +1,13 @@
+name: astrbot_plugin_memory_bridge
+display_name: 唯一记忆桥
+desc: "让她的记忆只有一个入口。现在她的记忆分散在四处：iris_memory 的 L2 向量库（560 条）、self_journal 的日记、ctx_window 的群聊原文、bilibili_ai_bot 的观看记忆——每个场景只看得到自己那一份，B站发动态时想不起群里的事，群里聊天时想不起昨天刷到的视频。本插件提供 remember（写唯一正本）和 recall（先查正本、再联邦查询四路旧库），任意场景都能一次查完。旧库只读不回写，等正本攒够自然退化成历史档案。"
+short_desc: 一份记忆，跨 QQ / B站 / 其他场景共用
+author: Randy Lua
+repo: https://github.com/RandyLuaW/astrbot_plugin_memory_bridge
+version: 1.0.0
+astrbot_version: ">=4.29.0"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 记忆
+  - 跨场景

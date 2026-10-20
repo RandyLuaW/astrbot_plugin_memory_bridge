@@ -1,0 +1,19 @@
+{
+  "semantic_enable": {
+    "type": "bool",
+    "default": true,
+    "description": "启用语义检索。会在本插件内加载一份 bge-small 嵌入模型（约几百 MB 内存），与 iris_memory 各一份。内存充裕就开着。",
+    "hint": "关掉只影响「意思相近但词不一样」的召回，词面检索不受影响。"
+  },
+  "embedding_model": {
+    "type": "string",
+    "default": "",
+    "description": "嵌入模型目录，留空则自动找 models/bge-small-zh-v1.5",
+    "hint": "只在 semantic_enable 打开时生效。"
+  },
+  "note": {
+    "type": "string",
+    "default": "",
+    "description": "占位项，无需填写。正本存在 plugin_data/astrbot_plugin_memory_bridge/memory.db。"
+  }
+}
