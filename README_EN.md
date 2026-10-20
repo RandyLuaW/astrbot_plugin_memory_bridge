@@ -1,6 +1,6 @@
 # Memory Bridge: one canonical store shared across scenarios
 
-> AstrBot plugin · Write once, recall everywhere, legacy stores stay read-only
+> AstrBot plugin · Write to the canonical store, recall federated, legacy read-only
 
 ## The problem
 
